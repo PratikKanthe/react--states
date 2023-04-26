@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
 class NewComp extends Component {
+    styles={
+        fontstyle: "italic",
+        color: "#4c1d95"
+      }
     constructor(props) {
       super(props)
     
@@ -11,7 +15,7 @@ class NewComp extends Component {
   render() {
     return (
       <div className='App'>
-        <h1>{this.state.message}</h1>
+        <h1 style={this.styles}>{this.state.message}</h1>
       </div>
     )
   }
