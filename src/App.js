@@ -4,7 +4,7 @@ import './App.css';
 class App extends React.Component {
   styles={
     fontstyle: "bold",
-    color: "teal"
+    color: "#1d4ed8"
   }
  render() {
   return(
