@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import bellA from "./BellA.png"
-// import bellB from "./bellB.png"
+import bellB from "./BellB.png"
 
 class NewComp extends Component {
     styles={
@@ -11,6 +11,12 @@ class NewComp extends Component {
         this.setState({
             message: "Hit the bell icon to never miss an update",
             sub: "Subscribed"
+        })
+      }
+      ImageChange = () =>{
+        this.setState({
+            message: "Thanks you! keep supporting!",
+            imageURL: bellB
         })
       }
     constructor(props) {
@@ -26,8 +32,8 @@ class NewComp extends Component {
     return (
       <div className='App'>
         <h1 style={this.styles}>{this.state.message}</h1>
-        <button onClick={this.ButtonChange}>{this.state.sub}</button>
-        <img src={this.state.imageURL}  alt=''/>
+        <button className='btn' onClick={this.ButtonChange}>{this.state.sub}</button>
+        <img onClick={this.ImageChange} className='img' src={this.state.imageURL}  alt=''/>
       </div>
     )
   }
