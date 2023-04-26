@@ -5,7 +5,7 @@ class NewComp extends Component {
       super(props)
     
       this.state = {
-         message: "Subscribe to the channel :)"
+         message: "Please subscribe to the channel :)"
       }
     }
   render() {
