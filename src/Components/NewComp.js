@@ -15,7 +15,7 @@ class NewComp extends Component {
       }
       ImageChange = () =>{
         this.setState({
-            message: "Thanks you! keep supporting!",
+            message: "Thank you! keep supporting!",
             imageURL: bellB
         })
       }
