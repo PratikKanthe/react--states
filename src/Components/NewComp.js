@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class NewComp extends Component {
+class NewComp extends Component {
     constructor(props) {
       super(props)
     
@@ -10,8 +10,8 @@ export class NewComp extends Component {
     }
   render() {
     return (
-      <div>
-        
+      <div className='App'>
+        <h1>{this.state.message}</h1>
       </div>
     )
   }
